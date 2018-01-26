@@ -14,7 +14,7 @@
     android:layout_margin="10dp">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -25,38 +25,39 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/roll_no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
         android:text="RA1511003010811"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/branch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/roll_no"
+        android:layout_below="@+id/roll_no"
         android:text="Computer Science and Engineering"
         android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignBaseline="@+id/branch"
+        android:layout_alignBottom="@+id/branch"
         android:layout_marginStart="21dp"
-        android:layout_toEndOf="@+id/textView5"
+        android:layout_toEndOf="@+id/branch"
         android:text="3"
         android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/branch"
+        android:layout_below="@+id/branch"
+        android:id="@+id/email_id"
         android:text="christianalan_as@srmuniv.edu.in"
         android:textSize="18sp" />
 
