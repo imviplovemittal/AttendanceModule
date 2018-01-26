@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_margin="10dp">
 
+
+    <!--personal info card-->
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -10,6 +12,10 @@
         android:layout_alignParentTop="true"
         android:id="@+id/info_card_view">
     </android.support.v7.widget.CardView>
+
+
+
+    <!--attendence card before clicking it-->
     <android.support.v7.widget.CardView
         android:id="@+id/att_card_view"
         android:layout_below="@+id/info_card_view"
@@ -20,10 +26,18 @@
             android:layout_height="wrap_content">
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
+
+
+
+    <!--new attendence card with full details after clicking the
+        the previous card-->
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/att_recycler_view"
         android:layout_below="@+id/info_card_view">
+
+
     </android.support.v7.widget.RecyclerView>
 </RelativeLayout>
