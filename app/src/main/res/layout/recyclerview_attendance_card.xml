@@ -15,16 +15,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/sub_code"
-            android:layout_below="@+id/sub_code"
+            android:layout_below="@+id/roomno"
             android:text="G.K.Sandhia"
             android:textSize="18sp"
-            android:id="@+id/textView" />
+            android:id="@+id/fac_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/att_progress_bar"
-            android:layout_alignStart="@+id/textView"
+            android:id="@+id/roomno"
+            android:layout_below="@+id/sub_code"
+            android:layout_toRightOf="@id/slot"
             android:text="1009"
             android:textSize="18sp" />
 
@@ -43,34 +44,42 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="28dp"
-            android:layout_toStartOf="@+id/att_progress_bar"
+            android:layout_toEndOf="@+id/slot"
             android:text="Data Structures"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
-        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
-            android:id="@+id/att_progress_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:minHeight="100dp"
-            android:minWidth="100dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A"
-            android:textSize="80sp"
-            android:textStyle="bold"
-            android:id="@+id/textView2" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/att_progress_bar"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="32dp"
+            android:text="A"
+            android:layout_marginRight="15dp"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:id="@+id/slot" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prog_att_layout"
+
+            android:layout_alignParentRight="true">
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            android:id="@+id/att_progress_bar"/>
+
+        <TextView
+            android:id="@+id/att_perc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="80%"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+        </RelativeLayout>
     </RelativeLayout>
 </android.support.v7.widget.CardView>
