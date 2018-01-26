@@ -9,13 +9,6 @@
         android:id="@+id/include"></include>
 
 
-
-    <!--attendence card before clicking it-->
-
-
-
-
-
     <!--new attendence card with full details after clicking the
         the previous card-->
     <android.support.v7.widget.RecyclerView
